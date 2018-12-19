@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>白马社区IOS下载</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        var pageWidth = window.innerWidth
+        document.write('<style>html{font-size:' + pageWidth / 10 + 'px;}</style>')
+    </script>
+    <script>
+        document.write("<link rel='stylesheet' href='./css/download.css?v=" + Math.random() + "'>");
+    </script>
+    <script src="../vendors/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="icon">
+            <img src="./img/index/icon.png" alt="">
+        </div>
+        <div class="title">
+            <h2>白马社区app</h2>
+            <h4>IOS下载指南</h4>
+        </div>
+    </header>
+    <h1>区块链的世界不是资本为王的世界，而是共识为王的世界。白马社区，让你的共识创造价值。</h1>
+    <main>
+        <h3>
+            1.下载后，打开系统设置点击“<span>通用</span>”点击 “<span>设备管理</span>”
+        </h3>
+        <img src="./img/download/iphone_one.png" alt="">
+        <h3>2.选择“<span>DIS,OOO</span>”</h3>
+        <img src="./img/download/iphone_two.png" alt="">
+        <h3>3.在弹出提示框中选中“<span>信任</span>”</h3>
+        <img src="./img/download/iphone_three.png" alt="">
+    </main>
+    <button id="download">
+        直接下载
+    </button>
+</div>
+<script>
+    // document.write("<script type='text/javascript' src='./js/main.js?v=" + Math.random() + "'><\/script>");
+</script>
+<script>
+    var ua = navigator.userAgent.toLowerCase();
+    var isWeixin = ua.indexOf('micromessenger') !== -1;
+    var isQQ = ua.match(/QQ/i) == "qq"
+
+    $('#download').click(function () {
+        if (isQQ) {
+            location.href = "./remind.html"
+        } else {
+            location.href = "itms-services://?action=download-manifest&url=https://m.ubidai.io/app/ios-download-wh.plist"
+        }
+
+    })
+    if (isQQ) {
+        location.href = "./remind.html"
+    } else {
+        location.href = "itms-services://?action=download-manifest&url=https://m.ubidai.io/app/ios-download-wh.plist"
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+button {
+    border: none;
+}
+
+button {
+    outline: none;
+}
+
+.container{
+    background-image: url("../img/index/bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    overflow: auto;
+}
+
+
+
+.icon{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.55rem;
+}
+
+.icon>img{
+    width: 2.27rem;
+}
+h3{
+    font-size:0.8rem;
+    font-family:PingFang-SC-Bold;
+    font-weight:bold;
+    width:5rem;
+    line-height:1;
+    margin: 0.88rem auto 0 auto;
+    color: #F8FBFF;
+    text-align: center;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #0155FF;
+    }
+}
+
+
+#my_string{
+    font-size:0.67rem;
+    font-family:PingFang-SC-Medium;
+    font-weight:500;
+    color: #FFFFFF;
+    width:6.3rem;
+    line-height: 1;
+    margin: 0.25rem auto 0 auto;
+    display: flex;
+    align-items: center;
+}
+#my_string span {
+    animation: blink 1s step-end infinite;
+    margin-bottom: 3px;
+}
+
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.87rem;
+}
+
+.btn-wrapper>a> button{
+    width:6.67rem;
+    height:1.16rem;
+    background:#0155FF;
+    border-radius:1rem;
+    margin-bottom: 0.59rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-wrapper>a> button>span{
+    font-size:0.43rem;
+    font-family:PingFang-SC-Medium;
+    font-weight:bold;
+    color: #F8FBFF;
+    line-height: 1;
+}
+.btn-wrapper>a> button>img{
+    width: 0.48rem;
+    margin-right: 0.31rem;
+}
